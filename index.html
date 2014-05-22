@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="Calc">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="style/buttons.css">
+    <link rel="stylesheet" type="text/css" href="style/ui.css"/>
+    <link rel="stylesheet" type="text/css" href="style/building_blocks.css"/>
+    <link rel="stylesheet" type="text/css" href="shared/style/headers.css"/>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/controller/calc.js"></script>
+    <title>Calc Combustível</title>
+</head>
+<body role="application" ng-controller="combustivel">
+<section role="region">
+    <header>
+        <h1>Calc Combustível</h1>
+    </header>
+    <form action="#" name="form">
+        <br>
+        <input ng-model="alc" type="number" min="0.01" max="100" step="0.01" placeholder="Álcool" required="required">
+        <br>
+        <input ng-model="gas" type="number" min="0.01" max="100" step="0.01"placeholder="Gasolina" required="required">
+        <br>
+        <div align="center">
+            <figure ng-show="bAlc">
+                <h1>Álcool</h1>
+                <img src="style/icons/alc.png" style="align">
+                <h3>Valor do Álcool em relação a Gasolina: {{resultado}} %</h3>
+            </figure>
+            <figure ng-show="bGas">
+                <h1>Gasolina</h1>
+                <img src="style/icons/gas.png" style="align">
+                <h3>Valor do Álcool em relação a Gasolina: {{resultado}} %</h3>
+            </figure>
+        </div>
+        <br>
+        <button class="danger" ng-click="calcular()">Calcular</button>
+    </form>
+</section>
+</body>
+</html>

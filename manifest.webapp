@@ -1,0 +1,13 @@
+{
+	"name": "Calc Combustível",
+	"version": "1.2",
+	"description": "Para motoristas de veículos flex, ao chegar em um posto de combustível sempre bate aquela dúvida etanol ou gasolina? Pensando em facilitar para os motorista foi desenvolvido o Calc Combustível uma forma de deixar o motorista ciente de qual abastecimento é mais viável.",
+	"launch_path": "/index.html",
+	"developer": {
+     "name": "Madson S. Santana"
+   },
+	"icons": {
+    "60": "/style/icons/icon_60.png",
+    "128": "/style/icons/icon_128.png"
+   }
+}
